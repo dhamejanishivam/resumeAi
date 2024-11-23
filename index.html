@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Builder</title>
+    <title>Resume Maker</title>
+    <link rel="shortcut icon" href="files/fav1.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -63,8 +64,8 @@
     <main class="main2" id="main2">
         <h2>Choose a Template</h2>
         <div class="alltemplates">
-            <div class="template-card" onclick="selectTemplate(1)"> <img src="files/resume.webp" alt=""> </div>
-            <div class="template-card" onclick="selectTemplate(2)"> <img src="files/resumeTemplate2.jpg" alt=""> </div>
+            <div class="template-card" onclick="selectTemplate(1)"> <img src="files/resumeTemplate1.webp" alt=""> </div>
+            <div class="template-card" onclick="selectTemplate(2)"> <img src="files/resumeTemplate2.png" alt=""> </div>
             <div class="template-card" onclick="selectTemplate(3)"> <img src="files/resumeTemplate3.png" alt=""> </div>
             <!-- <div class="template-card" onclick="selectTemplate(2)"> <img src="files/c.jpg" alt=""> </div> -->
             <!-- <div class="template-card" onclick="selectTemplate(3)"> <img src="files/d.webp" alt=""> </div> -->
@@ -74,6 +75,11 @@
             <button onclick="nextPage()">Start Making Resume</button>
         </div>
     </main>
+
+    <div class="alert-box" id="alert-box">
+        <div class="alert-text" id="alert-text"></div>
+        <button class="alert-button">Ok</button>
+    </div>
 
 
     <footer>

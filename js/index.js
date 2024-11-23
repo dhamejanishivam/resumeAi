@@ -19,6 +19,29 @@ function nextPage() {
     if (selectedTemplate) {
         window.location.href = "maker/";
     } else {
-        alert("Please select a template to proceed.");
+        alertMessageShow("Please select a template to proceed.");
     }
 }
+
+
+
+
+
+
+function alertMessageShow(text){
+  
+    let alertText = document.getElementById("alert-text")
+    alertText.innerHTML = text;
+    
+    let alertBox = document.getElementById("alert-box");
+    alertBox.style.display = "flex";
+    
+  }
+  
+  
+  let alertButton = document.querySelector(".alert-button")
+  alertButton.addEventListener("click", function() {
+    let alertBox = document.getElementById("alert-box");
+    alertBox.style.display = "none";
+  });
+  

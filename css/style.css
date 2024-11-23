@@ -247,3 +247,63 @@ header .header {
 .footer a{
     color: rgb(48, 71, 172);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.alert-box {
+    font-family: 'Poppins', sans-serif; /* Clean and professional font */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background: linear-gradient(135deg, #ffffff, #f8f9fa); Subtle premium gradient */
+    background: linear-gradient(135deg, #ffffff, #add2f8); /* Subtle premium gradient */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Minimal shadow for depth */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 25px; /* Balanced padding for breathing room */
+    border-radius: 12px; /* Slightly rounded corners for modern feel */
+    text-align: center; /* Center text for uniformity */
+    max-width: 400px; /* Restrict width for focus */
+    width: 90%; /* Responsive on smaller screens */
+    display: none;
+  }
+  
+  .alert-text {
+    font-size: 1.2rem;
+    font-weight: 500; /* Medium weight for clear readability */
+    color: #333; /* Neutral and professional color */
+    margin-bottom: 15px; /* Spacing for separation from the button */
+  }
+  
+  .alert-button {
+    cursor: pointer;
+    padding: 10px 20px;
+    width: fit-content;
+    background: #007bff; /* Modern blue for a professional look */
+    color: #fff; /* Contrast for text visibility */
+    border: none;
+    border-radius: 12px; /* Subtle rounding */
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase; /* Adds emphasis */
+    transition: background 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .alert-button:hover {
+    background: #0056b3; /* Darker blue for hover state */
+  }
+  
+  
