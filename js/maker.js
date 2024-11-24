@@ -382,7 +382,7 @@ function getProjectsDetails(){
         projectDesc:projectdesc
       })
     })
-    console.log(projectsData)
+    // console.log(projectsData)
     return projectsData;
 
 }
@@ -447,7 +447,9 @@ skillsinput.addEventListener("input", function (e){
   if(inputValue.includes(",")){
 
     let lastskill = inputValue.split(',').pop().trim();
-    console.log(lastskill)
+    // console.log(lastskill)
+
+    document.getElementById("skills1").value += `${inputValue.split(",")[0]},`;
 
     let up = document.getElementById("skillsEntered")
     up.innerHTML = `${up.innerHTML} <div>${inputValue.split(",")[0]}</div>` 
