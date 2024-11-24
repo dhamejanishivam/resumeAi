@@ -45,3 +45,36 @@ function alertMessageShow(text){
     alertBox.style.display = "none";
   });
   
+
+
+let templates = document.querySelectorAll(".alltemplates > div");
+templates.forEach(elem => {
+    elem.addEventListener("click",function(){
+        scrollToSection("footer");
+    })
+})
+
+
+function scrollToSection(sectionId) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
+
+      if (sectionId == "footer"){
+            let btn1 = document.getElementById("btn1");
+            btn1.classList.add("btn1Ani");
+            
+            setTimeout(function(){
+                let btn1 = document.getElementById("btn1");
+                btn1.classList.remove("btn1Ani");
+            },7000)
+
+      }
+
+    }
+  }
+
+
+

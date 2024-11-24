@@ -16,7 +16,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
 }
 
 body {
@@ -246,6 +246,24 @@ header .header {
 
 .footer a{
     color: rgb(48, 71, 172);
+}
+
+
+
+.btn1Ani{
+    animation: btnAni 1s ease-in-out alternate;
+    animation-delay: 0.75s;
+    animation-iteration-count: 4;
+}
+
+@keyframes btnAni {
+    from{
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    }
+    to{
+        box-shadow: 0 0 20px rgba(0, 123, 255, 1);
+        transform: translateY(-20px);
+    }
 }
 
 

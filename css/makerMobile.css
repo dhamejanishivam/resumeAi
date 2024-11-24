@@ -69,4 +69,40 @@
     #resumeForm{
         width: 100%;
     }
+
+
+
+
+    .submitbtn button {
+        margin-top: 200px !important ; 
+        background-color: red;
+    }
+
+    .btn1Ani{
+        animation: btnAni 1s ease-in-out alternate;
+        animation-delay: 1s;
+        animation-iteration-count: 4;
+    }
+    
+    @keyframes btnAni {
+        from{
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+        }
+        to{
+            box-shadow: 0 0 20px rgba(0, 123, 255, 1);
+            transform: translateY(-10px);
+        }
+    }
+    
+    
+
+
+
+
+
+
+
+
+
+
 }
